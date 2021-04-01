@@ -6,6 +6,6 @@ abstract class PackageBase
 {
     public function say($str)
     {
-        echo $str;
+        return $str;
     }
 }

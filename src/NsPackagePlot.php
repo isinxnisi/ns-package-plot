@@ -2,13 +2,15 @@
 
 namespace Nsr\NsPackagePlot;
 
+require_once __DIR__ . '/../config/const.php';
+require_once __DIR__ . '/Common/PackageBase.php';
+
 use Nsr\NsPackagePlot\Common\PackageBase;
 
 class NsPackagePlot extends PackageBase
 {
     public static function hello()
     {
-        echo 'Hello! \n';
-        parent::say(NSPACKPLOT_TITLE);
+        return "Hello! \n" . parent::say(NSPACKPLOT_TITLE);
     }
 }
