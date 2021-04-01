@@ -1,0 +1,20 @@
+{
+    "name": "nsr/ns-package-plot",
+    "type": "standard",
+    "description": "Nsr Test Package.",
+    "homepage": "https://github.com/isinxnisi/ns-package-plot",
+    "license": "CC-BY-SA-4.0",
+    "autoload": {
+        "psr-4": {
+            "Nsr\\NsPackagePlot\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nsr\\NsPackagePlot\\": "tests/"
+        }
+    },
+    "bin": [
+        "bin/ns-package-plot"
+    ]
+}
