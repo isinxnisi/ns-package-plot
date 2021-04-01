@@ -4,7 +4,7 @@ namespace Nsr\NsPackagePlot\Common;
 
 abstract class PackageBase
 {
-    public function say($str)
+    public static function say($str)
     {
         return $str;
     }

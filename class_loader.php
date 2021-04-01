@@ -16,7 +16,9 @@ function nsrPackagePlotClassLoader($class)
     if (!empty($array[1]) && $array[1] !== 'NsPackagePlot') {
         return null;
     }
-    $classfile = __DIR__ . '/' . str_replace('\\', '/', $class) . '.php';
+    array_splice($array, 0, 2);
+
+    $classfile = __DIR__ . '/src/' . implode(DIRECTORY_SEPARATOR, $array) . '.php';
     if (!file_exists($classfile)) {
         return null;
     }
