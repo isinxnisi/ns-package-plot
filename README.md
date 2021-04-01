@@ -1,10 +1,14 @@
 
 
-## Install
----
+# Getting Started
 
-### 1. リポジトリの追加
+<br>
 
+## 1. リポジトリの追加
+
+<br>
+
+### Composer
 ```
 composer config repositories.nsr/ns-package-plot vcs https://github.com/isinxnisi/ns-package-plot
 ```
@@ -13,7 +17,10 @@ composer config repositories.nsr/ns-package-plot vcs https://github.com/isinxnis
 composer require nsr/ns-package-plot
 ```
 
-#### GitHub　の場合
+<br>
+
+
+### ※GitHub　の場合
 ```
 C:\works\projects\00_nsr\02_traning\ns-job-1\cake>composer require nsr/ns-package-plot
 Your GitHub credentials are required to fetch private repository metadata (https://github.com/isixnisi/ns-package-plot)
@@ -22,30 +29,53 @@ to retrieve a token. It will be stored in "C:/Users/nishr/AppData/Roaming/Compos
 Token (hidden):
 
 ```
-#### トークン入力
+### トークン入力
 
 ```
 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
 ```
 
-#### または設定
+<br>
+
+### または設定
 
 ```
 composer config -g github-oauth.github.com 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
 ```
-#### 認証ファイル　→　困ったら一旦消す
+### 認証ファイル　→　困ったら一旦消す
 
 ```
 C:\Users\Username\AppData\Roaming\Composer\auth.json
 ```
 
+<br>
+<br>
+<br>
 
+## 2. CakePHP
 
+<br>
 
----
+bootstrap.php
+```
+require ROOT . DS . 'vendor' . DS  . 'nsr' . DS . 'ns-package-plot' . DS . 'src' . DS . 'NsPackagePlot.php';
+```
+<br>
+
+テーブル、コントローラー
+```
+use Nsr\NsPackagePlot\NsPackagePlot;
+...
+NsPackagePlot::hello();
+```
+
+<br>
+<br>
+<br>
 
 ## 参考
----
+
+<br>
 
 ### Composer パッケージ追加
 
@@ -60,3 +90,14 @@ http://qpleple.com/understand-composer-versions/
 https://note.kiriukun.com/entry/20190814-how-to-install-composer-package-from-github-private-repos
 https://docs.github.com/ja/github/authenticating-to-github/creating-a-personal-access-token
 https://docs.github.com/en/developers/apps/scopes-for-oauth-apps
+
+
+<br>
+<br>
+<br>
+
+# How to use
+
+<br>
+
+
