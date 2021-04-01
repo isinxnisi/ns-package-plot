@@ -12,6 +12,6 @@ class NsPackagePlot extends PackageBase
 {
     public static function hello()
     {
-        echo "Hello! \n" . parent::say(NSPACKPLOT_TITLE);
+        return "Hello! \n" . parent::say(NSPACKPLOT_TITLE);
     }
 }
