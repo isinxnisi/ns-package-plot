@@ -59,6 +59,10 @@ C:\Users\Username\AppData\Roaming\Composer\auth.json
 bootstrap.php
 ```
 require ROOT . DS . 'vendor' . DS  . 'nsr' . DS . 'ns-package-plot' . DS . 'src' . DS . 'NsPackagePlot.php';
+
+... or ...
+
+require ROOT . DS . 'vendor' . DS  . 'nsr' . DS . 'ns-package-plot' . DS . 'class_loader.php';
 ```
 <br>
 
